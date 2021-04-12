@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-12T09:48:26.359Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="hy68A5sKNv_L-RLoVvx1" version="14.5.10" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-04-12T09:57:51.497Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="IDqEdQZ4AD3lFSLY2NMq" version="14.5.10" type="github" pages="5">
   <diagram id="YW9blF_Owmo7Ird1f1LF" name="Page-2">
     <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -123,6 +123,35 @@
         </mxCell>
         <mxCell id="7FXDLO-AdmhuCDb1IHFq-12" value="API server" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/generic_server.svg;" vertex="1" parent="7FXDLO-AdmhuCDb1IHFq-1">
           <mxGeometry x="426" y="225" width="33.6" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2gecRY44C8IrdJoKqug1" name="Page-5">
+    <mxGraphModel dx="1426" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="QxzFYVdIYubaaprNjunj-0" />
+        <mxCell id="QxzFYVdIYubaaprNjunj-1" parent="QxzFYVdIYubaaprNjunj-0" />
+        <mxCell id="EWvQ33ldcOREJpzuu48I-0" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="QxzFYVdIYubaaprNjunj-1" target="EWvQ33ldcOREJpzuu48I-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="200" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWvQ33ldcOREJpzuu48I-5" value="" style="endArrow=classic;html=1;exitX=0.991;exitY=0.591;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.119;entryY=0.633;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="QxzFYVdIYubaaprNjunj-1" source="EWvQ33ldcOREJpzuu48I-7" target="EWvQ33ldcOREJpzuu48I-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="330" as="sourcePoint" />
+            <mxPoint x="560" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EWvQ33ldcOREJpzuu48I-6" value="API specification" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.code_file" vertex="1" parent="QxzFYVdIYubaaprNjunj-1">
+          <mxGeometry x="276.5" y="175" width="47" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EWvQ33ldcOREJpzuu48I-7" value="API tests" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/xomo-basics/128/document-03-128.png" vertex="1" parent="QxzFYVdIYubaaprNjunj-1">
+          <mxGeometry x="420" y="156" width="88" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="EWvQ33ldcOREJpzuu48I-10" value="API server" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/generic_server.svg;" vertex="1" parent="QxzFYVdIYubaaprNjunj-1">
+          <mxGeometry x="582" y="170" width="33.6" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
