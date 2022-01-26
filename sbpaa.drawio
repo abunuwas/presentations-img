@@ -1,1 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2022-01-26T08:38:40.665Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" version="16.4.7" etag="woD3ds4dhWtsyoOOSzjq" type="github"><diagram id="uih_YIozQDPHWDFCECjt">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-26T08:52:51.839Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="d3YaHyvTGwoWAEH3ZdhZ" version="16.4.7" type="github">
+  <diagram id="uih_YIozQDPHWDFCECjt" name="Page-1">
+    <mxGraphModel dx="951" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s-2OnS7YulEKN1Elurk--1" value="Scenario" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="280" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--1">
+          <mxGeometry y="26" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--2" value="+ id: uuid&#xa;+ financial_year: str&#xa;+ range_structure: str&#xa;+ created: datetime&#xa;+ status: str&#xa;+ proposed_submission_date: str&#xa;+ starred: bool&#xa;+ market_id: foreignkey(PMA_DM_VA.PMA_NO)&#xa;+ author_id: foreignkey(users.id)&#xa;+ updated_by: foreignkey(users.id)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--1">
+          <mxGeometry y="34" width="280" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--5" value="+ author: relationship(user)&#xa;+ market: relationship(PMA_DM_V)&#xa;+ datasets: relationship(ScenarioResults)&#xa;+ adjustments: relationship(Adjustment)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--1">
+          <mxGeometry y="190" width="280" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
