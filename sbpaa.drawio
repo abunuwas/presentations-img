@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-26T10:29:44.447Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="gtB5ABehlW3G5HHciOjA" version="16.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-26T10:30:36.062Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="WFg1BTqQWdGxr56fkMx5" version="16.4.7" type="github">
   <diagram id="uih_YIozQDPHWDFCECjt" name="Page-1">
     <mxGraphModel dx="1801" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -49,7 +49,7 @@
         <mxCell id="s-2OnS7YulEKN1Elurk--21" value="+ id: uuid&#xa;+ financial_year: str&#xa;+ range_structure: str&#xa;+ created: datetime&#xa;+ updated: datetime&#xa;+ author_id: foreignkey(users.id)&#xa;+ updated_by: foreignkey(users.id)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--19">
           <mxGeometry y="34" width="250" height="116" as="geometry" />
         </mxCell>
-        <mxCell id="s-2OnS7YulEKN1Elurk--22" value="+ author: relationship(user)&#xa;+ markets: relationship(PMA_DM_V)&#xa;+ datasets: relationship(ScenarioResults)&#xa;+ scenarios: relationship(Scenario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="s-2OnS7YulEKN1Elurk--19">
+        <mxCell id="s-2OnS7YulEKN1Elurk--22" value="+ author: relationship(user)&#xa;+ markets: relationship(PMA_DM_V)&#xa;+ datasets: relationship(ScenarioResults)&#xa;+ adjustments: relationship(Adjustment)&#xa;+ scenarios: relationship(Scenario)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="s-2OnS7YulEKN1Elurk--19">
           <mxGeometry y="150" width="250" height="120" as="geometry" />
         </mxCell>
       </root>
