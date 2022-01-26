@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-26T08:52:51.839Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="d3YaHyvTGwoWAEH3ZdhZ" version="16.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-26T09:32:54.060Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="2VdcTtsN3yuhL7kpQyQy" version="16.4.7" type="github">
   <diagram id="uih_YIozQDPHWDFCECjt" name="Page-1">
-    <mxGraphModel dx="951" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1801" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,6 +15,30 @@
         </mxCell>
         <mxCell id="s-2OnS7YulEKN1Elurk--5" value="+ author: relationship(user)&#xa;+ market: relationship(PMA_DM_V)&#xa;+ datasets: relationship(ScenarioResults)&#xa;+ adjustments: relationship(Adjustment)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--1">
           <mxGeometry y="190" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--7" value="ScenarioResults" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="500" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--7">
+          <mxGeometry y="26" width="500" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--9" value="+ id: uuid&#xa;+ created: datetime&#xa;+ scenario_id: foreignkey(scenario.id)&#xa;+ adjustments: relationship(adjustment, secondary_key=dataset_adjustments_association)&#xa;+ excel_export: str&#xa;+ fulfilment_export: str&#xa;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--7">
+          <mxGeometry y="34" width="500" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--10" value="+ author: relationship(user)&#xa;+ market: relationship(PMA_DM_V)&#xa;+ datasets: relationship(ScenarioResults)&#xa;+ adjustments: relationship(Adjustment)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--7">
+          <mxGeometry y="140" width="500" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--11" value="ScenarioDataset" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="410" width="290" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--11">
+          <mxGeometry y="26" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--13" value="+ id: uuid&#xa;+ scenario_result_id: foreignkey(scenario_results.id)&#xa;+ created: datetime&#xa;+ business_date: datetime&#xa;+ sales_channel: str&#xa;+ hfb_code: str&#xa;+ fulfilment_flow_code: str&#xa;+ value: float&#xa;+ actual: float&#xa;+ forecast: float" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--11">
+          <mxGeometry y="34" width="290" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="s-2OnS7YulEKN1Elurk--14" value="+ author: relationship(user)&#xa;+ market: relationship(PMA_DM_V)&#xa;+ datasets: relationship(ScenarioResults)&#xa;+ adjustments: relationship(Adjustment)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="s-2OnS7YulEKN1Elurk--11">
+          <mxGeometry y="190" width="290" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
