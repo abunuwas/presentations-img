@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-27T17:58:40.797Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="salWLaYX4JA-PYLeDRy5" version="16.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-27T18:00:09.867Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="Q7nt0ESUw1tANL2VmOw_" version="16.4.7" type="github">
   <diagram id="uih_YIozQDPHWDFCECjt" name="Page-1">
     <mxGraphModel dx="951" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -52,7 +52,7 @@
         <mxCell id="s-2OnS7YulEKN1Elurk--24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="s-2OnS7YulEKN1Elurk--23" vertex="1">
           <mxGeometry y="26" width="320" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="s-2OnS7YulEKN1Elurk--25" value="+ id: uuid&#xa;+ created: datetime&#xa;+ scenario_id: foreignkey(scenario.id)&#xa;+ adjustments: relationship(adjustment, secondary_key=dataset_adjustments_association)&#xa;+ excel_export: str&#xa;+ fulfilment_export: str&#xa;+ per_market_sales_report: str&#xa;+ scenario: relationship(ScenarioResult)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="s-2OnS7YulEKN1Elurk--23" vertex="1">
+        <mxCell id="s-2OnS7YulEKN1Elurk--25" value="+ id: uuid&#xa;+ created: datetime&#xa;+ aggregation_id: foreignkey(scenario.id)&#xa;+ adjustments: relationship(adjustment, secondary_key=dataset_adjustments_association)&#xa;+ excel_export: str&#xa;+ fulfilment_export: str&#xa;+ per_market_sales_report: str&#xa;+ scenarios: relationship(ScenarioResult, aggregation_result_scenario_result_association)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" parent="s-2OnS7YulEKN1Elurk--23" vertex="1">
           <mxGeometry y="34" width="320" height="156" as="geometry" />
         </mxCell>
         <mxCell id="s-2OnS7YulEKN1Elurk--27" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
